@@ -1,8 +1,10 @@
+import UserName from './UserName';
+
 /* eslint-disable react/prop-types */
-const Welcome = ({ numQuestions, dispatch }) => {
+const Welcome = ({ numQuestions, dispatch, username }) => {
 	return (
 		<div className="flex flex-col justify-center items-center font-mono text-center  text-balance ">
-			<h2 className="text-7xlfont-semibold  ">
+			<h2 className="text-4xl font-semibold  ">
 				Welcome to the Vite Quiz Challenge!
 			</h2>
 			<p className="text-3xl">
@@ -10,6 +12,9 @@ const Welcome = ({ numQuestions, dispatch }) => {
 				You can only choose one answer. <br />
 				Are you ready?
 			</p>
+
+			<UserName username={username} dispatch={dispatch} />
+
 			<button
 				onClick={() => dispatch({ type: 'start' })}
 				className=" bg-emerald-500 hover:bg-emerald-700 transition-all  text-white font-bold py-4 text-2xl  px-6 rounded-full mt-4
