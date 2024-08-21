@@ -15,8 +15,8 @@ import Footer from './components/Footer';
 
 const initialState = {
 	questions: [],
-	status: 'loading', // 'loading', 'error', 'ready'. 'active', 'finished'
-	index: 0, // Index of the current question
+	status: 'loading',
+	index: 0,
 	answer: null,
 	points: 0,
 	highscore: 0,
@@ -103,6 +103,7 @@ const App = () => {
 		index,
 		answer,
 		points,
+
 		highscore,
 		secondsRemaining,
 		username,
