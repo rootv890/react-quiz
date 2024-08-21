@@ -135,5 +135,9 @@
 			"correctOption": 3,
 			"points": 20
 		}
-	]
+	],
+	"credits": {
+		"author": "Jonas Schmedtmann",
+		"twitter": "@jonasschmedtman"
+	}
 }
